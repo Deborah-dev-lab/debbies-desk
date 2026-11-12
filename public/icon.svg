@@ -1,0 +1,22 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Dark plum background -->
+  <rect width="64" height="64" rx="12" fill="#291e27"/>
+
+  <!-- Pink pixel computer -->
+  <rect x="7" y="9" width="50" height="40" fill="#e99aa7"/>
+  <rect x="12" y="14" width="40" height="30" fill="#3b2b3d"/>
+
+  <!-- Pixel heart -->
+  <path
+    d="M21 23H27V27H31V23H37V27H41V33H37V37H33V41H29V37H25V33H21Z"
+    fill="#f5b5c3"
+  />
+
+  <!-- Computer stand -->
+  <rect x="26" y="49" width="12" height="6" fill="#e99aa7"/>
+  <rect x="18" y="55" width="28" height="5" fill="#e99aa7"/>
+
+  <!-- Highlight -->
+  <rect x="7" y="9" width="50" height="4" fill="#f3c2ca"/>
+</svg>

@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import {
   Manrope,
@@ -5,10 +6,6 @@ import {
 } from "next/font/google";
 
 import "./globals.css";
-
-/* =========================================================
-   FONTS
-========================================================= */
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -24,49 +21,15 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-/* =========================================================
-   METADATA
-========================================================= */
-
-export const metadata: Metadata = {
-  title: {
-    default: "Deborah Kaburu | Designer & Developer",
-    template: "%s | Deborah Kaburu",
-  },
-
+export const metadata = {
+  title: "Debbie's Desk | Deborah Kaburu",
   description:
-    "Portfolio of Deborah Kaburu, a product designer and software developer based in Nairobi, Kenya. Exploring digital products, UX/UI design, web development, visual storytelling and emerging technology.",
-
-  keywords: [
-    "Deborah Kaburu",
-    "Product Designer",
-    "Software Developer",
-    "Frontend Developer",
-    "UX/UI Designer",
-    "Creative Developer",
-    "Web Development",
-    "Nairobi",
-    "Kenya",
-    "Portfolio",
-  ],
-
-  authors: [
-    {
-      name: "Deborah Kaburu",
-    },
-  ],
-
-  creator: "Deborah Kaburu",
-
-  robots: {
-    index: true,
-    follow: true,
-  },
+    "The creative portfolio of Deborah Kaburu — software developer and product designer. Explore projects, design, development and experience.",
+  icons: {
+  icon: "/debbies-desk/icon.svg",
+  shortcut: "/debbies-desk/icon.svg",
+},
 };
-
-/* =========================================================
-   ROOT LAYOUT
-========================================================= */
 
 export default function RootLayout({
   children,
