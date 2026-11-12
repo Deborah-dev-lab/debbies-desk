@@ -2,7 +2,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import {
   ArrowDown,
   ArrowUpRight,
@@ -1800,15 +1799,13 @@ export default function DeskScene() {
             </span>
 
             <div className="group/studio relative aspect-[3/2] w-full">
-              <Image
-                src="/desk/debbies-desk-studio.png"
-                alt="Deborah's interactive pixel-art studio with a computer, bookshelf, violin, cello and black cat."
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain transition-transform duration-700 ease-out motion-safe:group-hover/studio:scale-[1.015]"
-              />
-
+              <img
+  src="/debbies-desk/desk/debbies-desk-studio.png"
+  alt="Deborah's interactive pixel-art studio with a computer, bookshelf, violin, cello and black cat."
+  className="absolute inset-0 h-full w-full object-contain transition-transform duration-700 ease-out motion-safe:group-hover/studio:scale-[1.015]"
+  loading="eager"
+  fetchPriority="high"
+/>
               {/* INTERACTIVE OBJECTS */}
               {hotspots.map((spot) => (
                 <button
