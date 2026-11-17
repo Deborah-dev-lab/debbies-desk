@@ -1,6 +1,6 @@
 
 "use client";
-
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowDown,
@@ -319,7 +319,12 @@ const experiences = [
       "Supported website and email reliability through troubleshooting and migration activities.",
       "Reduced technical issues by 40% through system administration, troubleshooting and migration support.",
     ],
-    links: [],
+    links: [
+      {
+        text: "Square One Eco Africa",
+        url: "https://sq1ecoafrica.org/",
+      },
+    ],
   },
   {
     title: "Product Design Intern",
@@ -1799,12 +1804,14 @@ export default function DeskScene() {
             </span>
 
             <div className="group/studio relative aspect-[3/2] w-full">
-              <img
+     <Image
   src="/debbies-desk/desk/debbies-desk-studio.png"
-  alt="Deborah's interactive pixel-art studio with a computer, bookshelf, violin, cello and black cat."
-  className="absolute inset-0 h-full w-full object-contain transition-transform duration-700 ease-out motion-safe:group-hover/studio:scale-[1.015]"
-  loading="eager"
-  fetchPriority="high"
+  alt="Deborah's interactive pixel-art studio"
+  fill
+  unoptimized
+  priority
+  sizes="(max-width: 1024px) 100vw, 50vw"
+  className="object-contain"
 />
               {/* INTERACTIVE OBJECTS */}
               {hotspots.map((spot) => (
@@ -1981,3 +1988,4 @@ export default function DeskScene() {
     </main>
   );
 }
+
